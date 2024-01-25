@@ -50,3 +50,8 @@ with open(items_filepath, encoding="UTF-8", mode="r") as items_file:
             print(item_id)
         except ValueError:
             print("Невалидный тип данных")
+        try:
+            owner_id = UUID(owner_id)
+            print(owner_id)
+        except ValueError:
+            print("Невалидный тип данных")
