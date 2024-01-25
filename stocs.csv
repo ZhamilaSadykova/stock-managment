@@ -1,0 +1,1 @@
+stock_id, location: str, capacity_sq_m, owner_id 
