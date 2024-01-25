@@ -38,20 +38,3 @@ with open(stocks_filepath, encoding="UTF-8", mode="r") as stocks_file:
             print(capacity_sq_m)
         except ValueError:
             print("Невалидный тип данных")
-
-
-with open(items_filepath, encoding="UTF-8", mode="r") as items_file:
-    items = csv.DictReader(items_file)
-    print("Итемс: ")
-    for item in items:
-        item_id = item["item_id"]
-        try:
-            item_id = int(item_id)
-            print(item_id)
-        except ValueError:
-            print("Невалидный тип данных")
-        try:
-            owner_id = UUID(owner_id)
-            print(owner_id)
-        except ValueError:
-            print("Невалидный тип данных")
